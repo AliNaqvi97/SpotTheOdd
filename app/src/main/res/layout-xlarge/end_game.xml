@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:kukukube="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#0cb9dd"
+    tools:context="com.ahn.spottheodd.EndGame">
+
+    <com.ahn.spottheodd.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/score_screen"
+        android:layout_marginTop="25dp"
+        android:textSize="100dp"
+        android:textColor="#036a95"
+        android:text="@string/hard_mode"
+        kukukube:fontName="@string/fontB"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.ahn.spottheodd.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_score"
+        android:textColor="#FFF"
+        kukukube:fontName="@string/fontR"
+        android:textSize="75dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/your_score_text"
+        android:layout_below="@id/score_screen"/>
+
+    <com.ahn.spottheodd.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/current_score"
+        android:textColor="#036a95"
+        android:textSize="100dp"
+        kukukube:fontName="@string/fontB"
+        android:layout_below="@id/your_score_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"/>
+
+    <com.ahn.spottheodd.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/best_score"
+        android:textColor="#FFF"
+        android:textSize="60dp"
+        kukukube:fontName="@string/fontR"
+        android:layout_below="@id/current_score"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="40dp"
+        android:id="@+id/best_score_text"
+        />
+
+    <com.ahn.spottheodd.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#036a95"
+        android:textSize="85dp"
+        kukukube:fontName="@string/fontR"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/best_score_text"
+        android:id="@+id/best_score"
+        />
+    <com.ahn.spottheodd.MyButton
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:background="@drawable/button_animation"
+        android:text="@string/play_again"
+        android:textSize="32dp"
+        android:textColor="#FFF"
+        android:id="@+id/play_game"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/best_score"
+        android:layout_marginTop="50dp"
+        />
+
+
+</RelativeLayout>

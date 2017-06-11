@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:kukukube="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:background="#036a95"
+    android:gravity="center">
+
+    <com.ahn.spottheodd.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        kukukube:fontName="@string/fontB"
+        android:text="@string/paused"
+        android:textColor="#FFF"
+        android:textSize="65dp"
+        />
+    <com.ahn.spottheodd.MyButton
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_animation"
+        android:text="@string/resume"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/resume"
+        android:textColor="#FFF"/>
+    <com.ahn.spottheodd.MyButton
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_animation"
+        android:text="@string/restart"
+        android:layout_marginTop="12dp"
+        android:id="@+id/restart"
+        android:textSize="30dp"
+        android:textColor="#FFF"/>
+    <com.ahn.spottheodd.MyButton
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_animation"
+        android:textSize="30dp"
+        android:id="@+id/quit"
+        android:text="@string/quit"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#FFF"/>
+</LinearLayout>

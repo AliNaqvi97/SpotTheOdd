@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:kukukube="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#0cb9dd"
+    tools:context="com.ahn.spottheodd.Selection">
+
+    <com.ahn.spottheodd.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_mode"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:textSize="55dp"
+        kukukube:fontName="@string/fontR"
+        android:layout_marginTop="175dp"
+
+        />
+
+    <com.ahn.spottheodd.MyButton
+        android:layout_width="175dp"
+        android:layout_height="65dp"
+        android:background="@drawable/button_animation"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#FFF"
+        android:layout_marginBottom="20dp"
+        android:text="@string/arcade"
+        android:textSize="35dp"
+        android:id="@+id/arcade"
+        android:onClick="PlayArcade"/>
+    <com.ahn.spottheodd.MyButton
+        android:layout_width="175dp"
+        android:layout_height="65dp"
+        android:textColor="#FFF"
+        android:id="@+id/normal"
+        android:textSize="35dp"
+        android:text="@string/classic"
+        android:background="@drawable/button_animation"
+        android:layout_above="@id/arcade"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="PlayClassic"/>
+    <com.ahn.spottheodd.MyButton
+        android:layout_width="175dp"
+        android:layout_height="65dp"
+        android:background="@drawable/button_animation"
+        android:textColor="#FFF"
+        android:text="@string/hard"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/arcade"
+        android:id="@+id/hard"
+        android:onClick="PlayHard"/>
+
+
+</RelativeLayout>
